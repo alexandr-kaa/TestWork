@@ -1,6 +1,6 @@
 #ifndef XORACTION_HPP
 #define XORACTION_HPP
-#include "Action.hpp"
+#include "action.hpp"
 namespace Helper {
  class XorAction : public Action{
  public:

@@ -10,7 +10,7 @@ protected:
         if(QFileInfo(filename).exists())
 	      reader = new Helper::FileReader(filename);
         else
-         throw std::exception("no file!");
+         throw std::runtime_error("no file!");
 	}
 	void TearDown()
 	{

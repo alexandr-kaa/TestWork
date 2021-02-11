@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
         ActionsExecutor executor(argv[1]);
 
-        a.connect(&executor, &ActionsExecutor::error, []() {throw std::exception("Application error"); });
+        a.connect(&executor, &ActionsExecutor::error, []() {throw std::runtime_error("Application error"); });
        
         executor.init();
 
